@@ -8,10 +8,13 @@ class Timer {
   }
 
   start() {
-    console.log("time to start timer!")
+    console.log(this)
   }
 }
 
 const durationInput = document.querySelector('#duration');
 const startButton = document.querySelector('#start')
 const pauseButton = document.querySelector('#pause')
+
+const timer = new Timer(durationInput, startButton, pauseButton);
+// timer.start();
